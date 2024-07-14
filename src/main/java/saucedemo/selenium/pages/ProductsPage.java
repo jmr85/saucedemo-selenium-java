@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductListPage {
+public class ProductsPage {
 	// Locators
 	@FindBy(id = "add-to-cart-sauce-labs-bike-light")
 	@CacheLookup
@@ -17,7 +17,7 @@ public class ProductListPage {
 	private WebElement linkCart;
 
 	// Constructor
-	public ProductListPage(WebDriver driver) {
+	public ProductsPage(WebDriver driver) {
 			PageFactory.initElements(driver, this);
 	}
 
