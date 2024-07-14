@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import saucedemo.selenium.pages.LoginPage;
+import saucedemo.selenium.pages.ProductListPage;
 import utils.EvidenceCaptureUtil;
 
 import java.io.IOException;
@@ -31,14 +33,8 @@ public class Test_BonusTrack2 {
 	
 	@Test(description = "CP01 - Login Usuario", priority = 1)
 	public void loginUsuario() {		
-		WebElement txtUsername = driver.findElement(By.xpath("//input[@id='user-name']"));
-		txtUsername.sendKeys("standard_user");// escribimos "standard_user"
-		
-		WebElement txtPassword = driver.findElement(By.xpath("//input[@id='password']"));
-		txtPassword.sendKeys("secret_sauce");// escribimos "standard_user"
-		
-		WebElement btnLogin = driver.findElement(By.xpath("//input[@id='login-button']"));
-		btnLogin.click();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.enterCredentials("standard_user", "secret_sauce");
 	}
 	
 	@Test(description = "CP02 - Pre Orden", priority = 2)
@@ -46,13 +42,13 @@ public class Test_BonusTrack2 {
 		// Captura de Pantalla 1		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_preOden.jpg");
 		
-		WebElement btnAddToCart = driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));
-		btnAddToCart.click();
+		ProductListPage productListPage = new ProductListPage(driver);
+		
+		productListPage.clickBtnAddToCart();
 		// Captura de pantalla 2
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "2_preOden.jpg");
 		
-		WebElement btnCart = driver.findElement(By.xpath("//a[@data-test='shopping-cart-link']"));
-		btnCart.click();
+		productListPage.clickLinkCart();
 		// Captura de Pantalla 3
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_preOden.jpg");
 		
