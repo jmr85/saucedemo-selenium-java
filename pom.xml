@@ -85,6 +85,13 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+            <reportsDirectory>./test-output</reportsDirectory>
+            <skipTests>false</skipTests>
+            <suiteXmlFiles>
+                <suiteXmlFile>${testSuiteFile}</suiteXmlFile>
+            </suiteXmlFiles>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
