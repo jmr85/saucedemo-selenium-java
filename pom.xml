@@ -64,7 +64,32 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  	<!--
+	Profiles allows us to execute commands from the testng.xml that we choose
+	mvn test -PSmoke
+	mvn test -PAnnotation
+	-->
+	<profiles>
+		<profile>
+			<id>Smoke</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.1</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testng.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
