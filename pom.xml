@@ -71,7 +71,7 @@
 	-->
 	<profiles>
 		<profile>
-			<id>Smoke</id>
+			<id>PurchaseOrderTest</id>
 			<build>
 				<pluginManagement>
 					<plugins>
