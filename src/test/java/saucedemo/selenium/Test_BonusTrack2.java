@@ -18,8 +18,11 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Test_BonusTrack2 {
-	
+	private static final Logger logger = LoggerFactory.getLogger(Test_BonusTrack2.class);
 	String url = "https://www.saucedemo.com/";
 	WebDriver driver; 
 	
@@ -31,11 +34,13 @@ public class Test_BonusTrack2 {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		logger.info("Open Browser and Navigate to URL");
 	}
 	
 	@Test(description = "CP01 - Login Usuario", priority = 1)
 	public void loginUsuario() {		
 		LoginPage loginPage = new LoginPage(driver);
+		logger.info("========== Enter credentials ===========");
 		loginPage.enterCredentials("standard_user", "secret_sauce");
 	}
 	
@@ -45,7 +50,7 @@ public class Test_BonusTrack2 {
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_preOden.jpg");
 		
 		ProductsPage productListPage = new ProductsPage(driver);
-		
+		logger.info("========== click Add to cart ===========");
 		productListPage.clickBtnAddToCart();
 		// Captura de pantalla 2
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "2_preOden.jpg");
@@ -59,6 +64,7 @@ public class Test_BonusTrack2 {
 	@Test(description = "CP03 - Checkout", priority = 3)
 	public void checkOut() throws IOException {
 		CartPage cartPage = new CartPage(driver);
+		logger.info("========== click Checkout ===========");
 		cartPage.clickBtnCheckout();
 		// Captura de Pantalla 1 - checkout-step-one		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_checkout-step-one.jpg");
@@ -75,7 +81,7 @@ public class Test_BonusTrack2 {
 		checkoutStepOnePage.clickBtnContinue();
 		// Captura de Pantalla 3 - checkout-step-two
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_checkout-step-two.jpg");
-		
+		logger.info("========== click Finish ===========");
 		// checkout-complete
 		CheckoutStepTwoPage checkoutStepTwoPage = new CheckoutStepTwoPage(driver);
 		checkoutStepTwoPage.clickBtnFinish();
