@@ -30,6 +30,8 @@ public class Test_BonusTrack2 {
 	
 	@BeforeSuite
 	public void setUp() {
+		logger.info("========== setUp ===========");
+		logger.info("========== Starting test cases execution ===========");
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -39,18 +41,23 @@ public class Test_BonusTrack2 {
 	
 	@Test(description = "CP01 - User Login", priority = 1)
 	public void userLogin() {		
+		logger.info("========== starting User Login test case ===========");
 		LoginPage loginPage = new LoginPage(driver);
-		logger.info("========== Enter credentials ===========");
+		logger.info("Enter credentials");
 		loginPage.enterCredentials("standard_user", "secret_sauce");
+
+		logger.info("========== end User Login test case ===========");
 	}
 	
 	@Test(description = "CP02 - Pre Orden", priority = 2)
 	public void preOrden() throws IOException {
+		logger.info("========== starting Pre Orden test case ===========");
+
 		// Captura de Pantalla 1		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_preOden.jpg");
 		
 		ProductsPage productListPage = new ProductsPage(driver);
-		logger.info("========== click Add to cart ===========");
+		logger.info("click Add to cart");
 		productListPage.clickBtnAddToCart();
 		// Captura de pantalla 2
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "2_preOden.jpg");
@@ -58,13 +65,16 @@ public class Test_BonusTrack2 {
 		productListPage.clickLinkCart();
 		// Captura de Pantalla 3
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_preOden.jpg");
-		
+
+		logger.info("========== end Pre Orden test case ===========");
 	}
 	
 	@Test(description = "CP03 - Checkout", priority = 3)
 	public void checkOut() throws IOException {
+		logger.info("========== starting Checkout test case ===========");
+
 		CartPage cartPage = new CartPage(driver);
-		logger.info("========== click Checkout ===========");
+		logger.info("click Checkout");
 		cartPage.clickBtnCheckout();
 		// Captura de Pantalla 1 - checkout-step-one		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_checkout-step-one.jpg");
@@ -81,7 +91,7 @@ public class Test_BonusTrack2 {
 		checkoutStepOnePage.clickBtnContinue();
 		// Captura de Pantalla 3 - checkout-step-two
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_checkout-step-two.jpg");
-		logger.info("========== click Finish ===========");
+		logger.info("click Finish");
 		// checkout-complete
 		CheckoutStepTwoPage checkoutStepTwoPage = new CheckoutStepTwoPage(driver);
 		checkoutStepTwoPage.clickBtnFinish();
@@ -101,11 +111,14 @@ public class Test_BonusTrack2 {
 		
 		// Captura de Pantalla 5 - checkout-complete
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"5_checkout-complete.jpg");
+
+		logger.info("========== end Checkout test case ===========", msgFinal);
 	}
 	
 	@AfterSuite
 	public void tearDown() {
 		//driver.close();
+		logger.info("========== tearDown ===========");
 	}
 
 }
