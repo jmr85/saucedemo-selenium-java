@@ -1,0 +1,5 @@
+16:47:33.444 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
+16:47:33.757 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Enter credentials ===========
+16:47:35.895 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Add to cart ===========
+16:47:36.910 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Checkout ===========
+16:47:39.348 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Finish ===========
