@@ -29,7 +29,7 @@ public class Test_BonusTrack2 {
 	String dirEvidence = "..\\saucedemo-selenium-java\\evidence\\";
 	
 	@BeforeSuite
-	public void abrirNavegador() {
+	public void setUp() {
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -37,8 +37,8 @@ public class Test_BonusTrack2 {
 		logger.info("Open Browser and Navigate to URL");
 	}
 	
-	@Test(description = "CP01 - Login Usuario", priority = 1)
-	public void loginUsuario() {		
+	@Test(description = "CP01 - User Login", priority = 1)
+	public void userLogin() {		
 		LoginPage loginPage = new LoginPage(driver);
 		logger.info("========== Enter credentials ===========");
 		loginPage.enterCredentials("standard_user", "secret_sauce");
@@ -92,7 +92,7 @@ public class Test_BonusTrack2 {
 
 		String msgFinal = checkoutCompletePage.getMsgFinalText();
 		
-		System.out.println("Texto Mensaje FInal ---->>>>>: " + msgFinal);
+		System.out.println("Final Message Text ---->>>>>: " + msgFinal);
 		
 		/* SoftAssert soft = new SoftAssert();
 		soft.assertEquals(msgFinal, "xcxcxc");//Checkout: Complete! */
@@ -104,7 +104,7 @@ public class Test_BonusTrack2 {
 	}
 	
 	@AfterSuite
-	public void cerrarNavegador() {
+	public void tearDown() {
 		//driver.close();
 	}
 
