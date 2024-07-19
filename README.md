@@ -2,5 +2,5 @@
 
 ## Run Test
 ```cmd
-maven test -PPurchaseOrderTest
+mvn test -PPurchaseOrderTest
 ```
