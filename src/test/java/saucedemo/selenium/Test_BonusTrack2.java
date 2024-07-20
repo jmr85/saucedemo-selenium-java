@@ -34,9 +34,10 @@ public class Test_BonusTrack2 {
 		logger.info("========== Starting test cases execution ===========");
 		driver = new ChromeDriver();
 		driver.get(url);
+		logger.info("Open Browser and Navigate to URL");
+		logger.info("Navigated to URL: {}", url);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		logger.info("Open Browser and Navigate to URL");
 	}
 	
 	@Test(description = "CP01 - User Login", priority = 1)
@@ -46,12 +47,12 @@ public class Test_BonusTrack2 {
 		logger.info("Enter credentials");
 		loginPage.enterCredentials("standard_user", "secret_sauce");
 
-		logger.info("========== end User Login test case ===========");
+		logger.info("========== Completed User Login test case ===========");
 	}
 	
 	@Test(description = "CP02 - Pre Orden", priority = 2)
 	public void preOrden() throws IOException {
-		logger.info("========== starting Pre Orden test case ===========");
+		logger.info("========== Starting Pre Orden test case ===========");
 
 		// Captura de Pantalla 1		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_preOden.jpg");
@@ -66,7 +67,7 @@ public class Test_BonusTrack2 {
 		// Captura de Pantalla 3
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_preOden.jpg");
 
-		logger.info("========== end Pre Orden test case ===========");
+		logger.info("========== Completed Pre Orden test case ===========");
 	}
 	
 	@Test(description = "CP03 - Checkout", priority = 3)
@@ -101,8 +102,7 @@ public class Test_BonusTrack2 {
 		CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
 
 		String msgFinal = checkoutCompletePage.getMsgFinalText();
-		
-		System.out.println("Final Message Text ---->>>>>: " + msgFinal);
+		logger.info("Final checkout message: {}", msgFinal);
 		
 		/* SoftAssert soft = new SoftAssert();
 		soft.assertEquals(msgFinal, "xcxcxc");//Checkout: Complete! */
@@ -112,7 +112,7 @@ public class Test_BonusTrack2 {
 		// Captura de Pantalla 5 - checkout-complete
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"5_checkout-complete.jpg");
 
-		logger.info("========== end Checkout test case ===========", msgFinal);
+		logger.info("========== Completed Checkout test case ===========");
 	}
 	
 	@AfterSuite
