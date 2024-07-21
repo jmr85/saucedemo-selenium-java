@@ -12,6 +12,7 @@ import saucedemo.selenium.pages.CheckoutStepTwoPage;
 import saucedemo.selenium.pages.LoginPage;
 import saucedemo.selenium.pages.ProductsPage;
 import utils.EvidenceCaptureUtil;
+import utils.ScreenshotUtil;
 
 import java.io.IOException;
 
@@ -100,6 +101,8 @@ public class Test_BonusTrack2 {
 		// Captura de Pantalla 4 - checkout-complete
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"4_checkout-complete.jpg");
 		CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
+
+		ScreenshotUtil.captureAndEmbedScreenshot(driver, "4b_checkout-complete");
 
 		String msgFinal = checkoutCompletePage.getMsgFinalText();
 		logger.info("Final checkout message: {}", msgFinal);
