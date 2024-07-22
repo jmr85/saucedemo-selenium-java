@@ -8,21 +8,28 @@ import org.testng.Reporter;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Base64;
 
 // embed the screenshots within the HTML of the TestNG report
 public class ScreenshotUtil {
+    private static final String SCREENSHOTS_DIR = "test-output/screenshots/";
+
     public static void captureAndEmbedScreenshot(WebDriver driver, String screenshotName) {
         if(driver instanceof TakesScreenshot) {
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             try {
-                // Guardar el archivo si es necesario
-                FileUtils.copyFile(screenshotFile, new File("test-output/screenshots/" + screenshotName + ".png"));
+                // Asegurarse de que el directorio existe
+                new File(SCREENSHOTS_DIR).mkdirs();
                 
-                String base64Screenshot = 
-                    Base64.getEncoder().encodeToString(FileUtils.readFileToByteArray(screenshotFile));
-                String htmlImageTag = "<img src=\"data:image/png;base64," + base64Screenshot + "\" width=\"50%\" />";
-                String htmlLinkTag = "<a href='screenshots/" + screenshotName + ".png' target='_blank'>View Screenshot</a>";
+                // Guardar el archivo
+                File destFile = new File(SCREENSHOTS_DIR + screenshotName + ".png");
+                FileUtils.copyFile(screenshotFile, destFile);
+                
+                // Crear una ruta relativa para el informe HTML
+                String relativePathToScreenshot = "screenshots/" + screenshotName + ".png";
+                
+                // Crear etiquetas HTML para la imagen y el enlace
+                String htmlImageTag = "<img src='" + relativePathToScreenshot + "' width='300px' />";
+                String htmlLinkTag = "<a href='" + relativePathToScreenshot + "' target='_blank'>See Screenshot</a>";
                 
                 // Agregar la imagen y el enlace al reporte
                 Reporter.log(htmlImageTag + "<br>" + htmlLinkTag);
