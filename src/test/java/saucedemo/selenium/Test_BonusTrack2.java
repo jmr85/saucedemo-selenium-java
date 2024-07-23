@@ -5,6 +5,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import saucedemo.selenium.pages.CartPage;
 import saucedemo.selenium.pages.CheckoutCompletePage;
 import saucedemo.selenium.pages.CheckoutStepOnePage;
@@ -12,6 +16,7 @@ import saucedemo.selenium.pages.CheckoutStepTwoPage;
 import saucedemo.selenium.pages.LoginPage;
 import saucedemo.selenium.pages.ProductsPage;
 import utils.EvidenceCaptureUtil;
+import utils.ExtentManager;
 import utils.ScreenshotUtil;
 
 import java.io.IOException;
@@ -22,10 +27,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+
 public class Test_BonusTrack2 {
 	private static final Logger logger = LoggerFactory.getLogger(Test_BonusTrack2.class);
 	String url = "https://www.saucedemo.com/";
 	WebDriver driver; 
+
+	ExtentReports extent;
+    ExtentTest test;
 	
 	String dirEvidence = "..\\saucedemo-selenium-java\\evidence\\";
 	
@@ -33,7 +43,9 @@ public class Test_BonusTrack2 {
 	public void setUp() {
 		logger.info("========== setUp ===========");
 		logger.info("========== Starting test cases execution ===========");
+
 		driver = new ChromeDriver();
+		extent = ExtentManager.getInstance();
 		driver.get(url);
 		logger.info("Open Browser and Navigate to URL");
 		logger.info("Navigated to URL: {}", url);
@@ -42,7 +54,11 @@ public class Test_BonusTrack2 {
 	}
 	
 	@Test(description = "CP01 - User Login", priority = 1)
-	public void userLogin() {		
+	public void userLogin() {	
+		ExtentManager.createTest("testGoogleSearch");
+        test = ExtentManager.getTest();
+
+		test.log(Status.INFO, ">>>>>>>> Starting User Login test case (Extent report)");
 		logger.info("========== starting User Login test case ===========");
 		LoginPage loginPage = new LoginPage(driver);
 		logger.info("Enter credentials");
@@ -121,6 +137,7 @@ public class Test_BonusTrack2 {
 	@AfterSuite
 	public void tearDown() {
 		//driver.close();
+		extent.flush();
 		logger.info("========== tearDown ===========");
 	}
 
