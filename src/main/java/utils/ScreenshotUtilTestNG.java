@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 
 // embed the screenshots within the HTML of the TestNG report
-public class ScreenshotUtil {
+public class ScreenshotUtilTestNG {
     private static final String SCREENSHOTS_DIR = "test-output/screenshots/";
 
     public static void captureAndEmbedScreenshot(WebDriver driver, String screenshotName) {
