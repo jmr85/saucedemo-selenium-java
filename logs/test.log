@@ -1,198 +1,60 @@
-16:47:33.444 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-16:47:33.757 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Enter credentials ===========
-16:47:35.895 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Add to cart ===========
-16:47:36.910 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Checkout ===========
-16:47:39.348 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== click Finish ===========
-17:16:04.242 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-17:16:04.260 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-17:16:20.574 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-17:16:20.743 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-17:16:20.829 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-17:16:22.100 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== end User Login test case ===========
-17:16:22.115 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Pre Orden test case ===========
-17:16:23.155 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-17:16:24.338 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== end Pre Orden test case ===========
-17:16:24.342 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-17:16:24.344 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-17:16:27.070 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-17:16:28.518 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== end Checkout test case ===========
-17:16:28.618 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-00:55:20.863 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-00:55:20.880 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-00:55:29.892 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-00:55:29.918 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-00:55:30.126 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-00:55:30.177 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-00:55:30.999 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-00:55:31.010 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-00:55:31.626 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-00:55:32.454 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-00:55:32.458 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-00:55:32.462 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-00:55:34.335 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-00:55:34.855 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-00:55:35.086 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-00:55:35.164 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-00:50:29.665 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-00:50:29.679 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-00:50:36.012 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-00:50:36.031 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-00:50:36.252 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-00:50:36.304 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-00:50:37.251 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-00:50:37.260 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-00:50:38.162 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-00:50:39.422 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-00:50:39.427 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-00:50:39.427 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-00:50:41.493 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-00:50:42.259 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-00:50:42.466 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-00:50:42.555 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-00:58:06.451 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-00:58:06.464 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-00:58:11.559 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-00:58:11.586 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-00:58:11.896 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-00:58:11.993 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-00:58:13.076 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-00:58:13.083 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-00:58:13.681 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-00:58:14.342 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-00:58:14.347 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-00:58:14.351 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-00:58:16.461 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-00:58:17.562 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-00:58:17.885 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-00:58:18.002 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-01:03:51.899 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-01:03:51.907 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-01:03:57.540 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-01:03:57.563 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-01:03:57.794 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-01:03:57.854 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-01:03:58.708 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-01:03:58.718 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-01:03:59.296 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-01:03:59.964 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-01:03:59.966 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-01:03:59.993 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-01:04:01.472 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-01:04:02.068 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-01:04:02.305 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-01:04:02.428 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-17:22:59.647 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-17:22:59.666 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-17:23:05.892 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-17:23:05.933 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-17:23:07.358 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-17:23:07.423 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-17:23:08.689 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-17:23:08.705 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-17:23:09.441 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-17:23:10.566 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-17:23:10.572 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-17:23:10.577 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-17:23:12.737 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-17:23:13.553 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-17:23:13.802 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-17:23:13.900 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-17:39:26.974 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-17:39:26.999 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-17:39:32.897 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-17:39:32.928 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-17:39:33.269 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-17:39:33.373 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-17:39:34.505 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-17:39:34.511 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-17:39:35.135 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-17:39:35.917 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-17:39:35.921 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-17:39:35.924 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-17:39:37.848 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-17:39:38.692 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-17:39:38.926 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-17:39:39.017 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-22:38:29.174 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-22:38:29.189 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-22:38:37.175 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-22:38:37.200 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-22:38:37.542 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-22:38:37.631 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-22:38:39.029 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-22:38:39.044 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-22:38:39.745 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-22:38:40.594 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-22:38:40.599 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-22:38:40.602 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-22:38:43.118 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-22:38:44.248 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-22:38:44.522 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-22:38:46.155 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-22:42:14.873 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-22:42:14.885 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-22:42:20.201 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-22:42:20.250 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-22:42:20.731 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-22:42:20.819 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-22:42:21.926 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-22:42:21.944 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-22:42:22.711 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-22:42:23.735 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-22:42:23.742 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-22:42:23.747 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-22:42:25.495 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-22:42:26.427 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-22:42:26.719 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-22:42:28.242 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-22:56:36.835 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-22:56:36.845 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-22:56:41.375 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-22:56:41.399 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-22:56:41.619 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-22:56:41.658 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-22:56:42.525 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-22:56:42.540 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-22:56:43.167 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-22:56:43.840 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-22:56:43.842 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-22:56:43.845 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-22:56:45.238 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-22:56:45.839 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-22:56:46.035 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-22:56:47.276 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-23:14:48.165 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-23:14:48.176 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-23:14:52.995 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-23:14:53.016 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-23:14:53.272 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-23:14:53.332 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-23:14:54.320 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-23:14:54.333 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-23:14:54.935 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-23:14:55.651 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-23:14:55.655 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-23:14:55.658 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-23:14:57.474 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-23:14:58.070 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-23:14:58.276 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-23:14:59.288 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
-23:17:50.158 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-23:17:50.191 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
-23:17:50.191 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
-23:17:55.663 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
-23:17:55.663 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
-23:17:56.136 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting User Login test case ===========
-23:17:56.194 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Enter credentials
-23:17:57.366 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed User Login test case ===========
-23:17:57.382 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting Pre Orden test case ===========
-23:17:58.078 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Add to cart
-23:17:59.247 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Pre Orden test case ===========
-23:17:59.255 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== starting Checkout test case ===========
-23:17:59.259 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Checkout
-23:18:01.138 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
-23:18:01.798 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
-23:18:01.981 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Completed Checkout test case ===========
-23:18:02.958 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
+02:37:58.074 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
+02:37:58.086 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
+02:38:02.591 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
+02:38:02.628 [main] INFO  utils.TestLogger - Open Browser and Navigate to URL(Extent report)
+02:38:02.650 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+02:38:02.786 [main] INFO  utils.TestLogger - Test suite started: Test
+02:38:02.950 [main] INFO  utils.TestLogger - Test started: userLogin
+02:38:03.155 [main] INFO  utils.TestLogger - Enter credentials(Extent report)
+02:38:04.161 [main] INFO  utils.TestLogger - PASS: Test passed: userLogin
+02:38:04.166 [main] INFO  utils.TestLogger - Test started: preOrden
+02:38:04.717 [main] INFO  utils.TestLogger - click Add to cart(Extent report)
+02:38:05.391 [main] INFO  utils.TestLogger - PASS: Test passed: preOrden
+02:38:05.393 [main] INFO  utils.TestLogger - Test started: checkOut
+02:38:05.397 [main] INFO  utils.TestLogger - click Checkout(Extent report)
+02:38:06.678 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
+02:38:07.331 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+02:38:07.332 [main] INFO  utils.TestLogger - Final checkout message : Checkout: Complete!
+02:38:07.554 [main] INFO  utils.TestLogger - PASS: Test passed: checkOut
+02:38:07.560 [main] INFO  utils.TestLogger - Test suite finished: Test
+02:38:08.737 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
+07/23/2024 02:46:12.521 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== setUp ===========
+07/23/2024 02:46:12.531 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== Starting test cases execution ===========
+07/23/2024 02:46:17.049 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Open Browser and Navigate to URL
+07/23/2024 02:46:17.055 [main] INFO  utils.TestLogger - Open Browser and Navigate to URL(Extent report)
+07/23/2024 02:46:17.080 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+07/23/2024 02:46:17.237 [main] INFO  utils.TestLogger - Test suite started: Test
+07/23/2024 02:46:17.333 [main] INFO  utils.TestLogger - Test started: userLogin
+07/23/2024 02:46:17.409 [main] INFO  utils.TestLogger - Enter credentials(Extent report)
+07/23/2024 02:46:18.264 [main] INFO  utils.TestLogger - PASS: Test passed: userLogin
+07/23/2024 02:46:18.271 [main] INFO  utils.TestLogger - Test started: preOrden
+07/23/2024 02:46:19.021 [main] INFO  utils.TestLogger - click Add to cart(Extent report)
+07/23/2024 02:46:19.687 [main] INFO  utils.TestLogger - PASS: Test passed: preOrden
+07/23/2024 02:46:19.689 [main] INFO  utils.TestLogger - Test started: checkOut
+07/23/2024 02:46:19.691 [main] INFO  utils.TestLogger - click Checkout(Extent report)
+07/23/2024 02:46:20.856 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - click Finish
+07/23/2024 02:46:21.419 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+07/23/2024 02:46:21.419 [main] INFO  utils.TestLogger - Final checkout message : Checkout: Complete!
+07/23/2024 02:46:21.623 [main] INFO  utils.TestLogger - PASS: Test passed: checkOut
+07/23/2024 02:46:21.635 [main] INFO  utils.TestLogger - Test suite finished: Test
+07/23/2024 02:46:22.773 [main] INFO  saucedemo.selenium.Test_BonusTrack2 - ========== tearDown ===========
+07/23/2024 02:54:27.594 [main] INFO  Test_BonusTrack2 - ========== setUp ===========
+07/23/2024 02:54:27.599 [main] INFO  Test_BonusTrack2 - ========== Starting test cases execution ===========
+07/23/2024 02:54:31.951 [main] INFO  Test_BonusTrack2 - Open Browser and Navigate to URL
+07/23/2024 02:54:31.957 [main] INFO  TestLogger - Open Browser and Navigate to URL(Extent report)
+07/23/2024 02:54:31.978 [main] INFO  Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+07/23/2024 02:54:32.253 [main] INFO  TestLogger - Test suite started: Test
+07/23/2024 02:54:32.384 [main] INFO  TestLogger - Test started: userLogin
+07/23/2024 02:54:32.459 [main] INFO  TestLogger - Enter credentials(Extent report)
+07/23/2024 02:54:33.532 [main] INFO  TestLogger - PASS: Test passed: userLogin
+07/23/2024 02:54:33.543 [main] INFO  TestLogger - Test started: preOrden
+07/23/2024 02:54:34.231 [main] INFO  TestLogger - click Add to cart(Extent report)
+07/23/2024 02:54:35.200 [main] INFO  TestLogger - PASS: Test passed: preOrden
+07/23/2024 02:54:35.203 [main] INFO  TestLogger - Test started: checkOut
+07/23/2024 02:54:35.206 [main] INFO  TestLogger - click Checkout(Extent report)
+07/23/2024 02:54:36.483 [main] INFO  Test_BonusTrack2 - click Finish
+07/23/2024 02:54:37.046 [main] INFO  Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+07/23/2024 02:54:37.046 [main] INFO  TestLogger - Final checkout message : Checkout: Complete!
+07/23/2024 02:54:37.252 [main] INFO  TestLogger - PASS: Test passed: checkOut
+07/23/2024 02:54:37.256 [main] INFO  TestLogger - Test suite finished: Test
+07/23/2024 02:54:38.328 [main] INFO  Test_BonusTrack2 - ========== tearDown ===========

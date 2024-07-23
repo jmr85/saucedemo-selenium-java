@@ -18,6 +18,7 @@ import saucedemo.selenium.pages.ProductsPage;
 import utils.EvidenceCaptureUtil;
 import utils.ExtentManager;
 import utils.ScreenshotUtil;
+import utils.TestLogger;
 
 import java.io.IOException;
 
@@ -26,8 +27,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-
 
 public class Test_BonusTrack2 {
 	private static final Logger logger = LoggerFactory.getLogger(Test_BonusTrack2.class);
@@ -48,6 +47,9 @@ public class Test_BonusTrack2 {
 		extent = ExtentManager.getInstance();
 		driver.get(url);
 		logger.info("Open Browser and Navigate to URL");
+
+		TestLogger.logInfo("Open Browser and Navigate to URL(Extent report)");
+
 		logger.info("Navigated to URL: {}", url);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -55,27 +57,19 @@ public class Test_BonusTrack2 {
 	
 	@Test(description = "CP01 - User Login", priority = 1)
 	public void userLogin() {	
-		ExtentManager.createTest("testGoogleSearch");
-        test = ExtentManager.getTest();
-
-		test.log(Status.INFO, ">>>>>>>> Starting User Login test case (Extent report)");
-		logger.info("========== starting User Login test case ===========");
 		LoginPage loginPage = new LoginPage(driver);
-		logger.info("Enter credentials");
+		TestLogger.logInfo("Enter credentials(Extent report)");
 		loginPage.enterCredentials("standard_user", "secret_sauce");
-
-		logger.info("========== Completed User Login test case ===========");
 	}
 	
 	@Test(description = "CP02 - Pre Orden", priority = 2)
 	public void preOrden() throws IOException {
-		logger.info("========== Starting Pre Orden test case ===========");
 
 		// Captura de Pantalla 1		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_preOden.jpg");
 		
 		ProductsPage productListPage = new ProductsPage(driver);
-		logger.info("click Add to cart");
+		TestLogger.logInfo("click Add to cart(Extent report)");
 		productListPage.clickBtnAddToCart();
 		// Captura de pantalla 2
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "2_preOden.jpg");
@@ -83,16 +77,12 @@ public class Test_BonusTrack2 {
 		productListPage.clickLinkCart();
 		// Captura de Pantalla 3
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"3_preOden.jpg");
-
-		logger.info("========== Completed Pre Orden test case ===========");
 	}
 	
 	@Test(description = "CP03 - Checkout", priority = 3)
 	public void checkOut() throws IOException {
-		logger.info("========== starting Checkout test case ===========");
-
 		CartPage cartPage = new CartPage(driver);
-		logger.info("click Checkout");
+		TestLogger.logInfo("click Checkout(Extent report)");
 		cartPage.clickBtnCheckout();
 		// Captura de Pantalla 1 - checkout-step-one		
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence, "1_checkout-step-one.jpg");
@@ -122,6 +112,9 @@ public class Test_BonusTrack2 {
 
 		String msgFinal = checkoutCompletePage.getMsgFinalText();
 		logger.info("Final checkout message: {}", msgFinal);
+		//TestLogger.logInfo("Final checkout message : {} (Extent report)", msgFinal);
+
+		TestLogger.log(Status.INFO, "Final checkout message : {}", msgFinal);
 		
 		/* SoftAssert soft = new SoftAssert();
 		soft.assertEquals(msgFinal, "xcxcxc");//Checkout: Complete! */
@@ -130,8 +123,6 @@ public class Test_BonusTrack2 {
 		
 		// Captura de Pantalla 5 - checkout-complete
 		EvidenceCaptureUtil.getScreenshot(driver, dirEvidence,"5_checkout-complete.jpg");
-
-		logger.info("========== Completed Checkout test case ===========");
 	}
 	
 	@AfterSuite
