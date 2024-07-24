@@ -28,7 +28,7 @@ public class ScreenshotUtil {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         
-        String destination = System.getProperty("user.dir") + "/screenshots/" + screenshotName + dateName + ".png";
+        String destination = System.getProperty("user.dir") + "/test-output/screenshots/" + screenshotName + dateName + ".png";
         File finalDestination = new File(destination);
         try {
             FileUtils.copyFile(source, finalDestination);
