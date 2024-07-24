@@ -58,3 +58,64 @@
 07/23/2024 02:54:37.252 [main] INFO  TestLogger - PASS: Test passed: checkOut
 07/23/2024 02:54:37.256 [main] INFO  TestLogger - Test suite finished: Test
 07/23/2024 02:54:38.328 [main] INFO  Test_BonusTrack2 - ========== tearDown ===========
+07/23/2024 17:52:53.050 [main] INFO  Test_BonusTrack2 - ========== setUp ===========
+07/23/2024 17:52:53.061 [main] INFO  Test_BonusTrack2 - ========== Starting test cases execution ===========
+07/23/2024 17:52:57.208 [main] INFO  Test_BonusTrack2 - Open Browser and Navigate to URL
+07/23/2024 17:52:57.213 [main] INFO  TestLogger - Open Browser and Navigate to URL(Extent report)
+07/23/2024 17:52:57.236 [main] INFO  Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+07/23/2024 17:52:57.373 [main] INFO  TestLogger - Test suite started: Test
+07/23/2024 17:52:57.460 [main] INFO  TestLogger - Test started: userLogin
+07/23/2024 17:52:57.523 [main] INFO  TestLogger - Enter credentials(Extent report)
+07/23/2024 17:52:58.305 [main] INFO  TestLogger - PASS: Test passed: userLogin
+07/23/2024 17:52:58.312 [main] INFO  TestLogger - Test started: preOrden
+07/23/2024 17:52:58.979 [main] INFO  TestLogger - click Add to cart(Extent report)
+07/23/2024 17:52:59.723 [main] INFO  TestLogger - PASS: Test passed: preOrden
+07/23/2024 17:52:59.727 [main] INFO  TestLogger - Test started: checkOut
+07/23/2024 17:52:59.731 [main] INFO  TestLogger - click Checkout(Extent report)
+07/23/2024 17:53:01.478 [main] INFO  Test_BonusTrack2 - click Finish
+07/23/2024 17:53:02.111 [main] INFO  Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+07/23/2024 17:53:02.113 [main] INFO  TestLogger - Final checkout message : Checkout: Complete!
+07/23/2024 17:53:02.293 [main] INFO  TestLogger - PASS: Test passed: checkOut
+07/23/2024 17:53:02.293 [main] INFO  TestLogger - Test suite finished: Test
+07/23/2024 17:53:03.132 [main] INFO  Test_BonusTrack2 - ========== tearDown ===========
+07/23/2024 18:29:12.015 [main] INFO  Test_BonusTrack2 - ========== setUp ===========
+07/23/2024 18:29:12.026 [main] INFO  Test_BonusTrack2 - ========== Starting test cases execution ===========
+07/23/2024 18:29:16.694 [main] INFO  Test_BonusTrack2 - Open Browser and Navigate to URL
+07/23/2024 18:29:16.700 [main] INFO  TestLogger - Open Browser and Navigate to URL(Extent report)
+07/23/2024 18:29:16.722 [main] INFO  Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+07/23/2024 18:29:16.843 [main] INFO  TestLogger - Test suite started: Test
+07/23/2024 18:29:16.950 [main] INFO  TestLogger - Test started: userLogin
+07/23/2024 18:29:17.015 [main] INFO  TestLogger - Enter credentials(Extent report)
+07/23/2024 18:29:18.145 [main] INFO  TestLogger - PASS: Test passed: userLogin
+07/23/2024 18:29:18.153 [main] INFO  TestLogger - Test started: preOrden
+07/23/2024 18:29:18.820 [main] INFO  TestLogger - click Add to cart(Extent report)
+07/23/2024 18:29:19.500 [main] INFO  TestLogger - PASS: Test passed: preOrden
+07/23/2024 18:29:19.507 [main] INFO  TestLogger - Test started: checkOut
+07/23/2024 18:29:19.511 [main] INFO  TestLogger - click Checkout(Extent report)
+07/23/2024 18:29:20.867 [main] INFO  Test_BonusTrack2 - click Finish
+07/23/2024 18:29:21.554 [main] INFO  Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+07/23/2024 18:29:21.554 [main] INFO  TestLogger - Final checkout message : Checkout: Complete!
+07/23/2024 18:29:21.806 [main] INFO  TestLogger - PASS: Test passed: checkOut
+07/23/2024 18:29:21.811 [main] INFO  TestLogger - Test suite finished: Test
+07/23/2024 18:29:22.797 [main] INFO  Test_BonusTrack2 - ========== tearDown ===========
+07/23/2024 21:36:02.796 [main] INFO  Test_BonusTrack2 - ========== setUp ===========
+07/23/2024 21:36:02.806 [main] INFO  Test_BonusTrack2 - ========== Starting test cases execution ===========
+07/23/2024 21:36:08.556 [main] INFO  Test_BonusTrack2 - Open Browser and Navigate to URL
+07/23/2024 21:36:08.563 [main] INFO  TestLogger - Open Browser and Navigate to URL(Extent report)
+07/23/2024 21:36:08.590 [main] INFO  Test_BonusTrack2 - Navigated to URL: https://www.saucedemo.com/
+07/23/2024 21:36:08.786 [main] INFO  TestLogger - Test suite started: Test
+07/23/2024 21:36:08.889 [main] INFO  TestLogger - Test started: userLogin
+07/23/2024 21:36:08.961 [main] INFO  TestLogger - Enter credentials(Extent report)
+07/23/2024 21:36:09.350 [main] INFO  TestLogger - Screenshot capturado y añadido al reporte: Antes de hacer clic en Login(2)
+07/23/2024 21:36:10.577 [main] INFO  TestLogger - PASS: Test passed: userLogin
+07/23/2024 21:36:10.588 [main] INFO  TestLogger - Test started: preOrden
+07/23/2024 21:36:11.452 [main] INFO  TestLogger - click Add to cart(Extent report)
+07/23/2024 21:36:12.518 [main] INFO  TestLogger - PASS: Test passed: preOrden
+07/23/2024 21:36:12.523 [main] INFO  TestLogger - Test started: checkOut
+07/23/2024 21:36:12.528 [main] INFO  TestLogger - click Checkout(Extent report)
+07/23/2024 21:36:14.191 [main] INFO  Test_BonusTrack2 - click Finish
+07/23/2024 21:36:14.824 [main] INFO  Test_BonusTrack2 - Final checkout message: Checkout: Complete!
+07/23/2024 21:36:14.825 [main] INFO  TestLogger - Final checkout message : Checkout: Complete!
+07/23/2024 21:36:15.035 [main] INFO  TestLogger - PASS: Test passed: checkOut
+07/23/2024 21:36:15.037 [main] INFO  TestLogger - Test suite finished: Test
+07/23/2024 21:36:15.958 [main] INFO  Test_BonusTrack2 - ========== tearDown ===========

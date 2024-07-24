@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import listeners.TestListener;
 import saucedemo.selenium.pages.CartPage;
 import saucedemo.selenium.pages.CheckoutCompletePage;
 import saucedemo.selenium.pages.CheckoutStepOnePage;
@@ -17,6 +18,7 @@ import saucedemo.selenium.pages.LoginPage;
 import saucedemo.selenium.pages.ProductsPage;
 import utils.EvidenceCaptureUtil;
 import utils.ExtentManager;
+import utils.ScreenshotUtil;
 import utils.ScreenshotUtilTestNG;
 import utils.TestLogger;
 
@@ -59,6 +61,13 @@ public class Test_BonusTrack2 {
 	public void userLogin() {	
 		LoginPage loginPage = new LoginPage(driver);
 		TestLogger.logInfo("Enter credentials(Extent report)");
+
+		  // Capturar screenshot antes de hacer clic en el botón de login
+        //String screenshotPath = ScreenshotUtil.captureScreenshot(driver, "antes_login_");
+        //TestListener.getTest().addScreenCaptureFromPath(screenshotPath, "Antes de hacer clic en Login");
+
+		ScreenshotUtil.captureAndAddToReport(driver, "antes_login(2)_", "Antes de hacer clic en Login(2)");
+
 		loginPage.enterCredentials("standard_user", "secret_sauce");
 	}
 	
