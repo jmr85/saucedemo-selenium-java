@@ -3,6 +3,7 @@ package saucedemo.selenium;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -30,8 +31,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Test_BonusTrack2 {
-	private static final Logger logger = LoggerFactory.getLogger(Test_BonusTrack2.class);
+@Listeners(TestListener.class)
+public class PurchaseOrderTest {
+	private static final Logger logger = LoggerFactory.getLogger(PurchaseOrderTest.class);
 	String url = "https://www.saucedemo.com/";
 	WebDriver driver; 
 
@@ -61,10 +63,6 @@ public class Test_BonusTrack2 {
 	public void userLogin() {	
 		LoginPage loginPage = new LoginPage(driver);
 		TestLogger.logInfo("Enter credentials(Extent report)");
-
-		  // Capturar screenshot antes de hacer clic en el botón de login
-        //String screenshotPath = ScreenshotUtil.captureScreenshot(driver, "antes_login_");
-        //TestListener.getTest().addScreenCaptureFromPath(screenshotPath, "Antes de hacer clic en Login");
 
 		ScreenshotUtil.captureAndAddToReport(driver, "antes_login(2)_", "Antes de hacer clic en Login(2)");
 
