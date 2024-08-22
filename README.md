@@ -2,5 +2,5 @@
 
 ## Run Test
 ```cmd
-mvn test -PPurchaseOrderTest
+mvn test -Dsurefire.suiteXmlFiles=TestngPurchaseOrderTest.xml
 ```
